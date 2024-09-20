@@ -29,7 +29,7 @@ const Stripes = () => {
     },
   ];
   return (
-    <div className="flex  mt-8   ">
+    <div className="flex  mt-8 max-sm:mt-20  max-sm:overflow-x-auto ">
       {data.map((item, index) => (
         <Stripe values={item} key={index} />
       ))}

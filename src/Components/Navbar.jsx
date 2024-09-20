@@ -10,7 +10,7 @@ function Navbar() {
             src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63349803431f1562dccf1802_refokus%20logo.svg"
             alt=""
           />
-          <div className="links flex item-center gap-10 ">
+          <div className="links flex item-center gap-10  max-sm:hidden">
             {["Home", "Work", "Culture", "", "News"].map((item, index) =>
               item.length === 0 ? (
                 <span className="w-[2px] h-7  bg-zinc-600 " key={index}></span>

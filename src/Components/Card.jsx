@@ -10,10 +10,10 @@ const Card = ({ width, para, hover = "false", heading, heading2 }) => {
           backgroundColor: hover === "true" && "#7443ff",
           padding: "25px",
         }}
-        className={`${width} bg-zinc-800 p-5 rounded-xl min-h-[60vh] flex flex-col justify-between hover:${hover}`}
+        className={`${width}  bg-zinc-800 p-5 rounded-xl min-h-[60vh]   flex flex-col justify-between hover:${hover}  `}
       >
         <div className="">
-          <div className="w-full flex justify-between items-center">
+          <div className="w-full flex justify-between items-center ">
             <h3>{heading}</h3>
             <IoIosArrowRoundForward />
           </div>
@@ -23,15 +23,15 @@ const Card = ({ width, para, hover = "false", heading, heading2 }) => {
           {para ? (
             <>
               {" "}
-              <h1 className=" text-5xl font-semi-bold tracking-tight leading-none">
+              <h1 className=" text-5xl font-semi-bold tracking-tight leading-none max-sm:text-4xl">
                 Start a Project
               </h1>
-              <button className="rounded-full py-2 px-5 mt-5 border border-zinc-700">
+              <button className="rounded-full py-2 px-5 mt-5 border border-zinc-700  max-sm:mt-2  max-sm:py-1  max-sm:px-3">
                 Contact Us
               </button>
             </>
           ) : (
-            <p className="text-sm text-zinc-500 font-medium mt-3">
+            <p className="text-sm text-zinc-500 font-medium mt-3 max-sm:mt-2">
               Explore what drives our team.
             </p>
           )}

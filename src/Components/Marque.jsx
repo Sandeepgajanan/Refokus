@@ -5,7 +5,7 @@ const Marque = ({ value, direction }) => {
   return (
     <div className="w-full flex overflow-hidden relative">
       <motion.div
-        className="flex flex-shrink-0 gap-32 py-8 pr-40"
+        className="flex flex-shrink-0 gap-32 py-8 pr-40 max-sm:gap-20 max-sm:pr-36 max-sm:py-4"
         initial={{ x: direction === "left" ? "0" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0" }}
         transition={{
@@ -19,7 +19,7 @@ const Marque = ({ value, direction }) => {
         ))}
       </motion.div>
       <motion.div
-        className="flex flex-shrink-0 gap-32 py-8 pr-40"
+        className="flex flex-shrink-0 gap-32 py-8 pr-40 max-sm:gap-20 max-sm:pr-36 max-sm:py-4"
         initial={{ x: direction === "left" ? "0" : "-100%" }}
         animate={{ x: direction === "left" ? "-100%" : "0" }}
         transition={{

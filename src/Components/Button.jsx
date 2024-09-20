@@ -5,7 +5,7 @@ import { IoIosReturnRight } from "react-icons/io";
 const Button = ({ content, width = "min-w-36" }) => {
   return (
     <motion.div
-      className={`relative ${width}   px-3 py-5 bg-zinc-200 rounded-xl flex items-center gap-4 text-zinc-900 font-['satoshi_regular'] overflow-hidden`}
+      className={`relative ${width}   px-3 py-5 bg-zinc-200 rounded-xl flex items-center gap-4 text-zinc-900 font-['satoshi_regular'] overflow-hidden max-sm:pl-1 max-sm:pr-2 max-sm:py-4 max-sm:min-w-32 max-sm:whitespace-nowrap`}
       initial="rest"
       whileHover="hover"
       animate="rest"

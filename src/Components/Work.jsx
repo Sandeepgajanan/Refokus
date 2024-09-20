@@ -83,11 +83,11 @@ const Work = () => {
 
   return (
     <>
-      <div className="max-w-screen-xl mx-auto text-center relative mt-10">
-        <h1 className="text-[28vw] font-medium tracking-tight select-none leading-none ">
+      <div className="max-w-screen-xl mx-auto text-center relative mt-10 max-sm:mt-20">
+        <h1 className="text-[28vw] font-medium tracking-tight select-none leading-none max-sm:text-[38vw] ">
           work
         </h1>
-        <div className="absolute w-full h-full top-0">
+        <div className="absolute w-full h-full top-0 max-sm:hidden">
           {data.map(
             (item, index) =>
               item.isActive && (
